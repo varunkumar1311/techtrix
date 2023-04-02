@@ -1,0 +1,119 @@
+<html>
+ <head>
+ <title>Top Frame</title>
+ <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+ </head>
+<body>
+ <center>
+<img src = "logo.png" width=60% height="120" align="left">
+<img src = 'logo2.png' height="120" align="right">
+<br>
+<marquee bgcolor="yellow" width="650" behavior="alternate">
+ <font face="Brush Script" size="8"><b><i>TECHTRIX</i></b></marquee> 
+
+<p><font face="cambria" color="black" size="10"><b><i>MALLA REDDY COLLEGE OF ENGINEERING & TECHNOLOGY</i></b></font></p>
+ </font>
+ <br>
+<font face="cambria" size="16" ><b><i>Department of Information Technology Presents</b></i></font>
+ </center>
+ <header>
+  <h2>EVENTS</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="techmaster.html">techmaster</a></li>
+      <li><a href="#">idea pitching</a></li>
+      <li><a href="#">quiz</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>TECHMASTER</h1>
+    <p>TECHMASTER is an event to check your coding abilities</p>
+    <button onclick="document.location='default.asp'" target="_blank">register now</button><br> <br>
+
+  </article>
+</section>
+
+
+<center>
+  <button onclick="document.location='default.asp'" target="_blank">VINTAGE LOOK</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">IDEA PITCHING</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">POSTER&PAPER PRESENTATION</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">GAME ON</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">SIXTH SENSE</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">HAUNTED HOUSE</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">MOCK INTERVIEWS</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank"> HOUSE OF TALENTS</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">BOWL OUT</button><br> 
+  <button onclick="document.location='default.asp'" target="_blank">CODE-A-THON</button><br> 
+  </center>
+
+
+ </body>
+</html>
